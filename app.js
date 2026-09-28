@@ -50,7 +50,7 @@ pmx.initModule({
   // Options related to the display style on Keymetrics
   widget : {
 
-    logo : 'https://avatars.githubusercontent.com/u/1402596?v=4',
+    logo : 'https://github.com/rckok/pm2-job-reaper/blob/09823edffb90d90c206bdb092b8aa603b0ff1d4f/assets/logo-300.png',
 
     theme: ['#141A1F', '#222222', '#3ff', '#3ff'],
 
