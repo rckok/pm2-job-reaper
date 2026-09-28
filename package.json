@@ -1,6 +1,6 @@
 {
   "name": "pm2-job-reaper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "PM2 module for Windows: puts every PM2-managed app into its own Job Object and kills leftover child processes when the app exits, crashes or is stopped.",
   "main": "app.js",
   "dependencies": {
