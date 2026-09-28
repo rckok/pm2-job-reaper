@@ -1,0 +1,32 @@
+{
+  "name": "pm2-job-reaper",
+  "version": "0.0.0",
+  "description": "PM2 module for Windows: puts every PM2-managed app into its own Job Object and kills leftover child processes when the app exits, crashes or is stopped.",
+  "main": "app.js",
+  "dependencies": {
+    "pmx": "beta",
+    "pm2": ">=5.3.0",
+    "koffi": "~2.16.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rckok/pm2-job-reaper"
+  },
+  "config": {
+    "pollIntervalMs": 5000,
+    "exitCode": 1,
+    "dryRun": false,
+    "debug": false,
+    "ignore": ""
+  },
+  "apps": [
+    {
+      "name": "pm2-job-reaper",
+      "script": "index.js",
+      "merge_logs": true,
+      "max_memory_restart": "200M"
+    }
+  ],
+  "author": "Ralph Kok",
+  "license": "MIT"
+}
