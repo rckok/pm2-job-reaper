@@ -4,7 +4,7 @@
   "description": "PM2 module for Windows: puts every PM2-managed app into its own Job Object and kills leftover child processes when the app exits, crashes or is stopped.",
   "main": "app.js",
   "dependencies": {
-    "pmx": "beta",
+    "pmx": "^1.6.8",
     "pm2": ">=5.3.0",
     "koffi": "~2.16.3"
   },
