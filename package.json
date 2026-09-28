@@ -22,7 +22,7 @@
   "apps": [
     {
       "name": "pm2-job-reaper",
-      "script": "index.js",
+      "script": "app.js",
       "merge_logs": true,
       "max_memory_restart": "200M"
     }
