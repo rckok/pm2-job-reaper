@@ -70,7 +70,7 @@ pmx.initModule({
 
 }, function(err, conf) {
   function main() {
-    cfg = applyConfig();
+    cfg = applyConfig(conf);
 
     const w = require('./lib/win32');
     const pm2 = require('pm2');
@@ -398,6 +398,9 @@ pmx.initModule({
     process.on('message', (msg) => msg === 'shutdown' && shutdown());
   }
 
+  if (err) {
+    log('error', err);
+  }
   if (process.platform === 'win32') {
     main();
   } else {

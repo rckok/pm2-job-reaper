@@ -10,8 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rckok/pm2-job-reaper"
+    "url": "git+https://github.com/rckok/pm2-job-reaper.git"
   },
+  "files": [
+    "app.js",
+    "README.md",
+    "lib",
+    "assets",
+    "package.json"
+  ],
   "config": {
     "pollIntervalMs": 5000,
     "exitCode": 1,
